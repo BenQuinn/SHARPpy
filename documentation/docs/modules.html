@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SHARPpy &#8212; SHARPpy 1.4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sharppy">
+<h1>SHARPpy<a class="headerlink" href="#sharppy" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="conf.html">conf module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasources.html">datasources package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasources.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasources.html#module-datasources.available">datasources.available module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datasources.html#module-datasources.data_source">datasources.data_source module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="datasources.html#module-datasources">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">setup module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sharppy.html">sharppy package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sharppy.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sharppy.databases.html">sharppy.databases package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#module-sharppy.databases.inset_data">sharppy.databases.inset_data module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#module-sharppy.databases.pwv">sharppy.databases.pwv module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#module-sharppy.databases.sars">sharppy.databases.sars module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#sharppy-databases-sars-distribution-module">sharppy.databases.sars_distribution module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.databases.html#module-sharppy.databases">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sharppy.io.html">sharppy.io package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.arw_decoder">sharppy.io.arw_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.buf_decoder">sharppy.io.buf_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.csv">sharppy.io.csv module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.decoder">sharppy.io.decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.pecan_decoder">sharppy.io.pecan_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.qc_tools">sharppy.io.qc_tools module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.spc_decoder">sharppy.io.spc_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io.uwyo_decoder">sharppy.io.uwyo_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.io.html#module-sharppy.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sharppy.sharptab.html">sharppy.sharptab package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.constants">sharppy.sharptab.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.fire">sharppy.sharptab.fire module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.interp">sharppy.sharptab.interp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.params">sharppy.sharptab.params module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.prof_collection">sharppy.sharptab.prof_collection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.profile">sharppy.sharptab.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.thermo">sharppy.sharptab.thermo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.utils">sharppy.sharptab.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.watch_type">sharppy.sharptab.watch_type module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab.winds">sharppy.sharptab.winds module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.sharptab.html#module-sharppy.sharptab">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sharppy.viz.html">sharppy.viz package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.SPCWindow">sharppy.viz.SPCWindow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.advection">sharppy.viz.advection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.analogues">sharppy.viz.analogues module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.barbs">sharppy.viz.barbs module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.draggable">sharppy.viz.draggable module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.ensemble">sharppy.viz.ensemble module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.fire">sharppy.viz.fire module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.generic">sharppy.viz.generic module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.hodo">sharppy.viz.hodo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.kinematics">sharppy.viz.kinematics module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.map">sharppy.viz.map module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.preferences">sharppy.viz.preferences module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.ship">sharppy.viz.ship module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.skew">sharppy.viz.skew module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.slinky">sharppy.viz.slinky module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.speed">sharppy.viz.speed module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.srwinds">sharppy.viz.srwinds module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.stp">sharppy.viz.stp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.stpef">sharppy.viz.stpef module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.thermo">sharppy.viz.thermo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.thetae">sharppy.viz.thetae module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.vrot">sharppy.viz.vrot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.watch">sharppy.viz.watch module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz.winter">sharppy.viz.winter module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sharppy.viz.html#module-sharppy.viz">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sharppy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sharppy.html#sharppy-gui-module">sharppy.gui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sharppy.html#sharppy-sounding-module">sharppy.sounding module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sharppy.html#module-sharppy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="test_profile.html">test_profile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.async">utils.async module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.async_threads">utils.async_threads module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.config">utils.config module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.frozenutils">utils.frozenutils module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.progress">utils.progress module</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils.utils">utils.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html#module-utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SHARPpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Blumberg, W.G, Halbert, K.T., Supinie, T.A., Marsh, P.T., Thompson, R., and J. Hart.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/docs/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

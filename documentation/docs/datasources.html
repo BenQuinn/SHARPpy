@@ -1,0 +1,395 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>datasources package &#8212; SHARPpy 1.4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="datasources-package">
+<h1>datasources package<a class="headerlink" href="#datasources-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-datasources.available">
+<span id="datasources-available-module"></span><h2>datasources.available module<a class="headerlink" href="#module-datasources.available" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-datasources.data_source">
+<span id="datasources-data-source-module"></span><h2>datasources.data_source module<a class="headerlink" href="#module-datasources.data_source" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="datasources.data_source.DataSource">
+<em class="property">class </em><code class="descclassname">datasources.data_source.</code><code class="descname">DataSource</code><span class="sig-paren">(</span><em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="69%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getArchiveLens</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getAvailableAtTime</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getAvailableTimes</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getDailyCycles</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getDecoder</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getDelays</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getForecastHours</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getMostRecentCycle</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getURL</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getURLList</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>isEnsemble</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>isObserved</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getArchiveLens">
+<code class="descname">getArchiveLens</code><span class="sig-paren">(</span><em>outlet_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getArchiveLens"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getArchiveLens" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getAvailableAtTime">
+<code class="descname">getAvailableAtTime</code><span class="sig-paren">(</span><em>dt</em>, <em>outlet_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getAvailableAtTime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getAvailableAtTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getAvailableTimes">
+<code class="descname">getAvailableTimes</code><span class="sig-paren">(</span><em>filename=None</em>, <em>outlet_num=None</em>, <em>max_cycles=100</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getAvailableTimes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getAvailableTimes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getDailyCycles">
+<code class="descname">getDailyCycles</code><span class="sig-paren">(</span><em>outlet_num=None</em>, <em>flatten=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getDailyCycles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getDailyCycles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getDecoder">
+<code class="descname">getDecoder</code><span class="sig-paren">(</span><em>stn</em>, <em>cycle_dt</em>, <em>outlet_num=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getDecoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getDelays">
+<code class="descname">getDelays</code><span class="sig-paren">(</span><em>outlet_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getDelays"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getDelays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getForecastHours">
+<code class="descname">getForecastHours</code><span class="sig-paren">(</span><em>outlet_num=None</em>, <em>flatten=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getForecastHours"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getForecastHours" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getMostRecentCycle">
+<code class="descname">getMostRecentCycle</code><span class="sig-paren">(</span><em>outlet_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getMostRecentCycle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getMostRecentCycle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getName">
+<code class="descname">getName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getName"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getURL">
+<code class="descname">getURL</code><span class="sig-paren">(</span><em>stn</em>, <em>cycle_dt</em>, <em>outlet_num=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getURL"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getURL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.getURLList">
+<code class="descname">getURLList</code><span class="sig-paren">(</span><em>outlet_num=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.getURLList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.getURLList" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.isEnsemble">
+<code class="descname">isEnsemble</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.isEnsemble"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.isEnsemble" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.DataSource.isObserved">
+<code class="descname">isObserved</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#DataSource.isObserved"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSource.isObserved" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="datasources.data_source.DataSourceError">
+<em class="property">exception </em><code class="descclassname">datasources.data_source.</code><code class="descname">DataSourceError</code><a class="reference internal" href="../_modules/datasources/data_source.html#DataSourceError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.DataSourceError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="datasources.data_source.Outlet">
+<em class="property">class </em><code class="descclassname">datasources.data_source.</code><code class="descname">Outlet</code><span class="sig-paren">(</span><em>ds_name</em>, <em>config</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An Outlet object contains all the information for a data outlet (for example, the observed 
+sounding feed from SPC, which is distinct from the observed sounding feed from, say, Europe).</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#datasources.data_source.Outlet.getCycles" title="datasources.data_source.Outlet.getCycles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCycles</span></code></a>()</td>
+<td>Return a list of data cycles that this outlet serves.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#datasources.data_source.Outlet.getForecastHours" title="datasources.data_source.Outlet.getForecastHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getForecastHours</span></code></a>()</td>
+<td>Return a list of forecast hours that this outlet serves.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="69%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getArchiveLen</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getArchivedCycles</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getAvailableAtTime</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getAvailableTimes</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getDecoder</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getDelay</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getFields</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getMostRecentCycle</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>getPoints</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>getURL</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>hasProfile</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>isAvailable</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getArchiveLen">
+<code class="descname">getArchiveLen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getArchiveLen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getArchiveLen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getArchivedCycles">
+<code class="descname">getArchivedCycles</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getArchivedCycles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getArchivedCycles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getAvailableAtTime">
+<code class="descname">getAvailableAtTime</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getAvailableAtTime"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getAvailableAtTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getAvailableTimes">
+<code class="descname">getAvailableTimes</code><span class="sig-paren">(</span><em>max_cycles=100</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getAvailableTimes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getAvailableTimes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getCycles">
+<code class="descname">getCycles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getCycles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getCycles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of data cycles that this outlet serves.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getDecoder">
+<code class="descname">getDecoder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getDecoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getDelay">
+<code class="descname">getDelay</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getDelay"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getDelay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getFields">
+<code class="descname">getFields</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getFields"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getFields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getForecastHours">
+<code class="descname">getForecastHours</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getForecastHours"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getForecastHours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of forecast hours that this outlet serves. If the ‘delta’ attribute is set to 0,
+then the data source only has the 0-hour.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getMostRecentCycle">
+<code class="descname">getMostRecentCycle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getMostRecentCycle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getMostRecentCycle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getPoints">
+<code class="descname">getPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getPoints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getPoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.getURL">
+<code class="descname">getURL</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.getURL"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.getURL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.hasProfile">
+<code class="descname">hasProfile</code><span class="sig-paren">(</span><em>point</em>, <em>cycle</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.hasProfile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.hasProfile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="datasources.data_source.Outlet.isAvailable">
+<code class="descname">isAvailable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#Outlet.isAvailable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.Outlet.isAvailable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="datasources.data_source.loadDataSources">
+<code class="descclassname">datasources.data_source.</code><code class="descname">loadDataSources</code><span class="sig-paren">(</span><em>ds_dir='/Users/blumberg/.sharppy/datasources'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#loadDataSources"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.loadDataSources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the data source information from the XML files. 
+Returns a dictionary associating data source names to DataSource objects.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="datasources.data_source.pingURLs">
+<code class="descclassname">datasources.data_source.</code><code class="descname">pingURLs</code><span class="sig-paren">(</span><em>ds_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/datasources/data_source.html#pingURLs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#datasources.data_source.pingURLs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to ping all the URLs in any XML file. 
+Takes a dictionary associating data source names to DataSource objects.
+Returns a dictionary associating URLs with a boolean specifying whether or not they were reachable.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-datasources">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-datasources" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SHARPpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Blumberg, W.G, Halbert, K.T., Supinie, T.A., Marsh, P.T., Thompson, R., and J. Hart.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/docs/datasources.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

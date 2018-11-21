@@ -1,0 +1,983 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>utils package &#8212; SHARPpy 1.4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="utils-package">
+<h1>utils package<a class="headerlink" href="#utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-utils.async">
+<span id="utils-async-module"></span><h2>utils.async module<a class="headerlink" href="#module-utils.async" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utils.async.AsyncThreads">
+<em class="property">class </em><code class="descclassname">utils.async.</code><code class="descname">AsyncThreads</code><span class="sig-paren">(</span><em>max_threads</em>, <em>debug=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide.QtCore.QObject</span></code></p>
+<p>AsyncThreads: A class to generate threads for whenever something can’t run in the main process.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async.AsyncThreads.clearQueue" title="utils.async.AsyncThreads.clearQueue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearQueue</span></code></a>()</td>
+<td>Clears the queue of processes waiting to be started and kills any threads currently running.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">destroyed</span></code></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async.AsyncThreads.isFinished" title="utils.async.AsyncThreads.isFinished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isFinished</span></code></a>(thread_id)</td>
+<td>Returns a boolean specifying whether the thread corresponding to thread_id is finished.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#utils.async.AsyncThreads.join" title="utils.async.AsyncThreads.join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">join</span></code></a>(thread_id)</td>
+<td>Waits until the thread corresponding to thread_id is finished.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async.AsyncThreads.post" title="utils.async.AsyncThreads.post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post</span></code></a>(func,&nbsp;callback,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Post a thread to be run.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>blockSignals</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>childEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>children</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>connect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>connectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>customEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>deleteLater</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>disconnect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>disconnectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dumpObjectInfo</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>dumpObjectTree</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dynamicPropertyNames</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>emit</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>event</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>eventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>findChild</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>findChildren</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>finish</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>inherits</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>installEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>isWidgetType</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>killTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>metaObject</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>moveToThread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>objectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>parent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>property</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>receivers</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>registerUserData</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>removeEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>sender</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>senderSignalIndex</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setObjectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>setParent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setProperty</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>signalsBlocked</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>startNext</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>startTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>thread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>timerEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>tr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>trUtf8</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="utils.async.AsyncThreads.clearQueue">
+<code class="descname">clearQueue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.clearQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.clearQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the queue of processes waiting to be started and kills any threads currently running.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async.AsyncThreads.finish">
+<code class="descname">finish</code><span class="sig-paren">(</span><em>thread_id</em>, <em>ret_val</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.finish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.finish" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="utils.async.AsyncThreads.isFinished">
+<code class="descname">isFinished</code><span class="sig-paren">(</span><em>thread_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.isFinished"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.isFinished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a boolean specifying whether the thread corresponding to thread_id is finished.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async.AsyncThreads.join">
+<code class="descname">join</code><span class="sig-paren">(</span><em>thread_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.join"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Waits until the thread corresponding to thread_id is finished.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async.AsyncThreads.post">
+<code class="descname">post</code><span class="sig-paren">(</span><em>func</em>, <em>callback</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post a thread to be run.
+func:   The function to run in a separate thread
+callback:   The function to run once func() is done. It will be passed the output from func() as a single tuple.
+background [optional]: Boolean specifying whether to run in the background. Background processes are started only</p>
+<blockquote>
+<div>if there are no higher-priority processes to run. The default value is False.</div></blockquote>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs: Arguments to func()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async.AsyncThreads.startNext">
+<code class="descname">startNext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async.html#AsyncThreads.startNext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async.AsyncThreads.startNext" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="utils.async.AsyncThreads.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#utils.async.AsyncThreads.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utils.async_threads">
+<span id="utils-async-threads-module"></span><h2>utils.async_threads module<a class="headerlink" href="#module-utils.async_threads" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utils.async_threads.AsyncThreads">
+<em class="property">class </em><code class="descclassname">utils.async_threads.</code><code class="descname">AsyncThreads</code><span class="sig-paren">(</span><em>max_threads</em>, <em>debug=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide.QtCore.QObject</span></code></p>
+<p>AsyncThreads: A class to generate threads for whenever something can’t run in the main process.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async_threads.AsyncThreads.clearQueue" title="utils.async_threads.AsyncThreads.clearQueue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearQueue</span></code></a>()</td>
+<td>Clears the queue of processes waiting to be started and kills any threads currently running.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">destroyed</span></code></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async_threads.AsyncThreads.isFinished" title="utils.async_threads.AsyncThreads.isFinished"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isFinished</span></code></a>(thread_id)</td>
+<td>Returns a boolean specifying whether the thread corresponding to thread_id is finished.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#utils.async_threads.AsyncThreads.join" title="utils.async_threads.AsyncThreads.join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">join</span></code></a>(thread_id)</td>
+<td>Waits until the thread corresponding to thread_id is finished.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#utils.async_threads.AsyncThreads.post" title="utils.async_threads.AsyncThreads.post"><code class="xref py py-obj docutils literal notranslate"><span class="pre">post</span></code></a>(func,&nbsp;callback,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Post a thread to be run.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>blockSignals</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>childEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>children</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>connect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>connectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>customEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>deleteLater</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>disconnect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>disconnectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dumpObjectInfo</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>dumpObjectTree</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dynamicPropertyNames</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>emit</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>event</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>eventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>findChild</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>findChildren</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>finish</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>inherits</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>installEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>isWidgetType</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>killTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>metaObject</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>moveToThread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>objectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>parent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>property</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>receivers</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>registerUserData</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>removeEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>sender</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>senderSignalIndex</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setObjectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>setParent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setProperty</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>signalsBlocked</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>startNext</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>startTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>thread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>timerEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>tr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>trUtf8</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.clearQueue">
+<code class="descname">clearQueue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.clearQueue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.clearQueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the queue of processes waiting to be started and kills any threads currently running.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.finish">
+<code class="descname">finish</code><span class="sig-paren">(</span><em>thread_id</em>, <em>ret_val</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.finish"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.finish" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.isFinished">
+<code class="descname">isFinished</code><span class="sig-paren">(</span><em>thread_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.isFinished"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.isFinished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a boolean specifying whether the thread corresponding to thread_id is finished.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.join">
+<code class="descname">join</code><span class="sig-paren">(</span><em>thread_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.join"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Waits until the thread corresponding to thread_id is finished.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.post">
+<code class="descname">post</code><span class="sig-paren">(</span><em>func</em>, <em>callback</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.post"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post a thread to be run.
+func:   The function to run in a separate thread
+callback:   The function to run once func() is done. It will be passed the output from func() as a single tuple.
+background [optional]: Boolean specifying whether to run in the background. Background processes are started only</p>
+<blockquote>
+<div>if there are no higher-priority processes to run. The default value is False.</div></blockquote>
+<p><a href="#id5"><span class="problematic" id="id6">*</span></a>args, <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs: Arguments to func()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.async_threads.AsyncThreads.startNext">
+<code class="descname">startNext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/async_threads.html#AsyncThreads.startNext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.async_threads.AsyncThreads.startNext" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="utils.async_threads.AsyncThreads.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#utils.async_threads.AsyncThreads.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utils.config">
+<span id="utils-config-module"></span><h2>utils.config module<a class="headerlink" href="#module-utils.config" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utils.config.Config">
+<em class="property">class </em><code class="descclassname">utils.config.</code><code class="descname">Config</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/config.html#Config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.config.Config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide.QtCore.QObject</span></code></p>
+<p>The Config class keeps track of the configuration in a QObject, so that it 
+can be passed via signals and slots.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">destroyed</span></code></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#utils.config.Config.initialize" title="utils.config.Config.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>(cfg_dict)</td>
+<td>Add items in the configuration.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#utils.config.Config.toFile" title="utils.config.Config.toFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toFile</span></code></a>()</td>
+<td>Write the configuration to the file.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>blockSignals</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>childEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>children</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>connect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>connectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>customEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>deleteLater</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>disconnect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>disconnectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dumpObjectInfo</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>dumpObjectTree</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dynamicPropertyNames</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>emit</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>event</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>eventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>findChild</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>findChildren</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>inherits</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>installEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>isWidgetType</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>killTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>metaObject</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>moveToThread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>objectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>parent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>property</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>receivers</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>registerUserData</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>removeEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>sender</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>senderSignalIndex</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>setObjectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setParent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>setProperty</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>signalsBlocked</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>startTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>thread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>timerEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>tr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>trUtf8</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="utils.config.Config.initialize">
+<code class="descname">initialize</code><span class="sig-paren">(</span><em>cfg_dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/config.html#Config.initialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.config.Config.initialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add items in the configuration. This function doesn’t modify items that already exist.
+cfg_dict:   A dictionary of configuration items. Keys are (section, field) tuples, and the values</p>
+<blockquote>
+<div>are the configuration values.</div></blockquote>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.config.Config.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#utils.config.Config.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="utils.config.Config.toFile">
+<code class="descname">toFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/config.html#Config.toFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.config.Config.toFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the configuration to the file.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utils.frozenutils">
+<span id="utils-frozenutils-module"></span><h2>utils.frozenutils module<a class="headerlink" href="#module-utils.frozenutils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utils.frozenutils.Process">
+<em class="property">class </em><code class="descclassname">utils.frozenutils.</code><code class="descname">Process</code><span class="sig-paren">(</span><em>group=None</em>, <em>target=None</em>, <em>name=None</em>, <em>args=()</em>, <em>kwargs={}</em>, <em>*</em>, <em>daemon=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/frozenutils.html#Process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.frozenutils.Process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">multiprocessing.context.Process</span></code></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>authkey</strong></dt>
+<dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">daemon</span></code></dt>
+<dd><p class="first last">Return whether process is a daemon</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">exitcode</span></code></dt>
+<dd><p class="first last">Return exit code of process or <cite>None</cite> if it has yet to stop</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ident</span></code></dt>
+<dd><p class="first last">Return identifier (PID) of process or <cite>None</cite> if it has yet to start</p>
+</dd>
+<dt><strong>name</strong></dt>
+<dd></dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">pid</span></code></dt>
+<dd><p class="first last">Return identifier (PID) of process or <cite>None</cite> if it has yet to start</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">sentinel</span></code></dt>
+<dd><p class="first last">Return a file descriptor (Unix) or handle (Windows) suitable for waiting for process termination.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_alive</span></code>()</td>
+<td>Return whether process is alive</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">join</span></code>([timeout])</td>
+<td>Wait until child process terminates</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code>()</td>
+<td>Method to be run in sub-process; can be overridden in sub-class</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code>()</td>
+<td>Start child process</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">terminate</span></code>()</td>
+<td>Terminate process; sends SIGTERM signal or uses TerminateProcess()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.frozenutils.freezeSupport">
+<code class="descclassname">utils.frozenutils.</code><code class="descname">freezeSupport</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/frozenutils.html#freezeSupport"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.frozenutils.freezeSupport" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.frozenutils.frozenPath">
+<code class="descclassname">utils.frozenutils.</code><code class="descname">frozenPath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/frozenutils.html#frozenPath"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.frozenutils.frozenPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.frozenutils.isFrozen">
+<code class="descclassname">utils.frozenutils.</code><code class="descname">isFrozen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/frozenutils.html#isFrozen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.frozenutils.isFrozen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-utils.progress">
+<span id="utils-progress-module"></span><h2>utils.progress module<a class="headerlink" href="#module-utils.progress" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utils.progress.progress">
+<em class="property">class </em><code class="descclassname">utils.progress.</code><code class="descname">progress</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/progress.html#progress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.progress.progress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PySide.QtCore.QObject</span></code></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(*args,&nbsp;**kwargs)</td>
+<td>Call self as a function.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">destroyed</span></code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>blockSignals</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>childEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>children</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>connect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>connectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>customEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>deleteLater</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>disconnect</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>disconnectNotify</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>doasync</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>dumpObjectInfo</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>dumpObjectTree</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>dynamicPropertyNames</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>emit</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>event</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>eventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>findChild</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>findChildren</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>inherits</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>installEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>isWidgetType</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>killTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>metaObject</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>moveToThread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>objectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>parent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>property</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>receivers</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>registerUserData</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>removeEventFilter</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>sender</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>senderSignalIndex</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setObjectName</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>setParent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>setProperty</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>signalsBlocked</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>startTimer</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>thread</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>timerEvent</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>tr</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>trUtf8</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><strong>updateProgress</strong></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><strong>updateText</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="utils.progress.progress.doasync">
+<code class="descname">doasync</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/progress.html#progress.doasync"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.progress.progress.doasync" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="utils.progress.progress.staticMetaObject">
+<code class="descname">staticMetaObject</code><em class="property"> = &lt;PySide.QtCore.QMetaObject object&gt;</em><a class="headerlink" href="#utils.progress.progress.staticMetaObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="utils.progress.progress.updateProgress">
+<code class="descname">updateProgress</code><span class="sig-paren">(</span><em>value</em>, <em>maximum</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/progress.html#progress.updateProgress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.progress.progress.updateProgress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="utils.progress.progress.updateText">
+<code class="descname">updateText</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/progress.html#progress.updateText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.progress.progress.updateText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-utils.utils">
+<span id="utils-utils-module"></span><h2>utils.utils module<a class="headerlink" href="#module-utils.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="utils.utils.is_py3">
+<code class="descclassname">utils.utils.</code><code class="descname">is_py3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/utils.html#is_py3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.utils.is_py3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.utils.total_seconds">
+<code class="descclassname">utils.utils.</code><code class="descname">total_seconds</code><span class="sig-paren">(</span><em>td</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/utils/utils.html#total_seconds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#utils.utils.total_seconds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SHARPpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Blumberg, W.G, Halbert, K.T., Supinie, T.A., Marsh, P.T., Thompson, R., and J. Hart.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/docs/utils.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

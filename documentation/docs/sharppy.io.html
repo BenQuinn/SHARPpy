@@ -1,0 +1,571 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>sharppy.io package &#8212; SHARPpy 1.4 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sharppy-io-package">
+<h1>sharppy.io package<a class="headerlink" href="#sharppy-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-sharppy.io.arw_decoder">
+<span id="sharppy-io-arw-decoder-module"></span><h2>sharppy.io.arw_decoder module<a class="headerlink" href="#module-sharppy.io.arw_decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.arw_decoder.ARWDecoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.arw_decoder.</code><code class="descname">ARWDecoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/arw_decoder.html#ARWDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.arw_decoder.ARWDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sharppy.io.decoder.Decoder" title="sharppy.io.decoder.Decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">sharppy.io.decoder.Decoder</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.buf_decoder">
+<span id="sharppy-io-buf-decoder-module"></span><h2>sharppy.io.buf_decoder module<a class="headerlink" href="#module-sharppy.io.buf_decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.buf_decoder.BufDecoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.buf_decoder.</code><code class="descname">BufDecoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/buf_decoder.html#BufDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.buf_decoder.BufDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sharppy.io.decoder.Decoder" title="sharppy.io.decoder.Decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">sharppy.io.decoder.Decoder</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.csv">
+<span id="sharppy-io-csv-module"></span><h2>sharppy.io.csv module<a class="headerlink" href="#module-sharppy.io.csv" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="sharppy.io.csv.loadCSV">
+<code class="descclassname">sharppy.io.csv.</code><code class="descname">loadCSV</code><span class="sig-paren">(</span><em>csv_file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/csv.html#loadCSV"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.csv.loadCSV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.decoder">
+<span id="sharppy-io-decoder-module"></span><h2>sharppy.io.decoder module<a class="headerlink" href="#module-sharppy.io.decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.decoder.Decoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.decoder.</code><code class="descname">Decoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#Decoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.Decoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sharppy.io.decoder.Decoder.getProfiles" title="sharppy.io.decoder.Decoder.getProfiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code></a>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="sharppy.io.decoder.Decoder.getProfiles">
+<code class="descname">getProfiles</code><span class="sig-paren">(</span><em>indexes=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#Decoder.getProfiles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.Decoder.getProfiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of profile objects generated from the
+file that was read in.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>prof_idxs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list (optional)</span></dt>
+<dd><p class="first last">A list of indices corresponding to the profiles to be returned.
+Default is to return the full list of profiles</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sharppy.io.decoder.Decoder.getStnId">
+<code class="descname">getStnId</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#Decoder.getStnId"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.Decoder.getStnId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sharppy.io.decoder.abstract">
+<em class="property">class </em><code class="descclassname">sharppy.io.decoder.</code><code class="descname">abstract</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#abstract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.abstract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>(*args,&nbsp;**kwargs)</td>
+<td>Call self as a function.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.decoder.findDecoders">
+<code class="descclassname">sharppy.io.decoder.</code><code class="descname">findDecoders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#findDecoders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.findDecoders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.decoder.getDecoder">
+<code class="descclassname">sharppy.io.decoder.</code><code class="descname">getDecoder</code><span class="sig-paren">(</span><em>dec_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#getDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.getDecoder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.decoder.getDecoders">
+<code class="descclassname">sharppy.io.decoder.</code><code class="descname">getDecoders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/decoder.html#getDecoders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.decoder.getDecoders" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.pecan_decoder">
+<span id="sharppy-io-pecan-decoder-module"></span><h2>sharppy.io.pecan_decoder module<a class="headerlink" href="#module-sharppy.io.pecan_decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.pecan_decoder.PECANDecoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.pecan_decoder.</code><code class="descname">PECANDecoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/pecan_decoder.html#PECANDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.pecan_decoder.PECANDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sharppy.io.decoder.Decoder" title="sharppy.io.decoder.Decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">sharppy.io.decoder.Decoder</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.qc_tools">
+<span id="sharppy-io-qc-tools-module"></span><h2>sharppy.io.qc_tools module<a class="headerlink" href="#module-sharppy.io.qc_tools" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="sharppy.io.qc_tools.raiseError">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">raiseError</code><span class="sig-paren">(</span><em>string</em>, <em>errorType</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#raiseError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.raiseError" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will raise an exception specified by the errorType variable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>string: the string to be #printed out to the user.</strong></dt>
+<dd></dd>
+<dt><strong>errorType: the type of exception.</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>None</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.numMasked">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">numMasked</code><span class="sig-paren">(</span><em>arr</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#numMasked"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.numMasked" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the number of unmasked array elements as well as the
+length of the array.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>arr: a masked Numpy array</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>the number of unmasked array elements</strong></dt>
+<dd></dd>
+<dt><strong>the length of the unmasked array</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.isPRESValid">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">isPRESValid</code><span class="sig-paren">(</span><em>pres</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#isPRESValid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.isPRESValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks to see if valid pressure (mb)
+values are within the pres array that is passed to the 
+Profile object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>pres: the pressure array (mb)</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>True/False: True If:</strong></dt>
+<dd><p class="first">1.) pressure array length is &gt; 1
+2.) pressure array is not filled with masked values 
+3.) if the pressure array is decreasing with the index</p>
+<blockquote class="last">
+<div><p>and there are no repeat values.</p>
+</div></blockquote>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.isHGHTValid">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">isHGHTValid</code><span class="sig-paren">(</span><em>hght</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#isHGHTValid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.isHGHTValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks to see if valid height (m)
+values are within the hght array that is passed to the 
+Profile object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>hght: the height array (m)</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>True/False: True If:</strong></dt>
+<dd><p class="first">1.) height array length is &gt; 0
+2.) height array is not filled with masked values 
+3.) if the height array is increasing with the index</p>
+<blockquote class="last">
+<div><p>and there are no repeat values.</p>
+</div></blockquote>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.isWSPDValid">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">isWSPDValid</code><span class="sig-paren">(</span><em>wspd</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#isWSPDValid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.isWSPDValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks to see if valid wind speed (knots)
+values are within the wspd array that is passed to the 
+Profile object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>wspd: the wind speed array (knots)</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>True/False: True if the wind speeds in the wspd array are all &gt;= 0.</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.isDWPCValid">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">isDWPCValid</code><span class="sig-paren">(</span><em>dwpc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#isDWPCValid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.isDWPCValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks to see if valid dewpoint (Celsius)
+values are within the dwpc array that is passed to the 
+Profile object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>dwpc: the dewpoint array (Celsius)</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>True/False: True if the values in the dewpoint array are all above absolute zero.</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sharppy.io.qc_tools.isTMPCValid">
+<code class="descclassname">sharppy.io.qc_tools.</code><code class="descname">isTMPCValid</code><span class="sig-paren">(</span><em>tmpc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/qc_tools.html#isTMPCValid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.qc_tools.isTMPCValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function checks to see if valid temperature (Celsius)
+values are within the tmpc array that is passed to the 
+Profile object</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>tmpc: the temperature array (Celsius)</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>True/False: True if the values in the temperature array are all above absolute zero.</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.spc_decoder">
+<span id="sharppy-io-spc-decoder-module"></span><h2>sharppy.io.spc_decoder module<a class="headerlink" href="#module-sharppy.io.spc_decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.spc_decoder.SPCDecoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.spc_decoder.</code><code class="descname">SPCDecoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/spc_decoder.html#SPCDecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.spc_decoder.SPCDecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sharppy.io.decoder.Decoder" title="sharppy.io.decoder.Decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">sharppy.io.decoder.Decoder</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io.uwyo_decoder">
+<span id="sharppy-io-uwyo-decoder-module"></span><h2>sharppy.io.uwyo_decoder module<a class="headerlink" href="#module-sharppy.io.uwyo_decoder" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sharppy.io.uwyo_decoder.UWYODecoder">
+<em class="property">class </em><code class="descclassname">sharppy.io.uwyo_decoder.</code><code class="descname">UWYODecoder</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sharppy/io/uwyo_decoder.html#UWYODecoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sharppy.io.uwyo_decoder.UWYODecoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sharppy.io.decoder.Decoder" title="sharppy.io.decoder.Decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">sharppy.io.decoder.Decoder</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">getProfiles</span></code>([indexes])</td>
+<td>Returns a list of profile objects generated from the file that was read in.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>getStnId</strong></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="sharppy.io.uwyo_decoder.UWYODecoder.MISSING">
+<code class="descname">MISSING</code><em class="property"> = -9999.0</em><a class="headerlink" href="#sharppy.io.uwyo_decoder.UWYODecoder.MISSING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sharppy.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-sharppy.io" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SHARPpy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Blumberg, W.G, Halbert, K.T., Supinie, T.A., Marsh, P.T., Thompson, R., and J. Hart.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/docs/sharppy.io.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
